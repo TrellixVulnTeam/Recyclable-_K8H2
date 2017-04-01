@@ -412,6 +412,14 @@ recognition Style
   margin: 0 auto;
 }
 
+#button {
+  font-size: inherit;
+  -webkit-appearance:none;
+  background: #f9f9f9;
+  border: 1px solid #eee;
+  color #07a;
+}
+
     /* ==========================================================================
 Portfolio Style
 ========================================================================== */
