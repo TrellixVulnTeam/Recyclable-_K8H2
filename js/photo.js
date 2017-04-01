@@ -2,6 +2,7 @@ window.addEventListener("DOMContentLoaded", function(){
 var canvas = document.getElementById('canvas');
 var context = canvas.getContext('2d');
 var video = document.getElementById('video');
+var photo = document.getElementById('photo');
 var mediaConfig = { video:true };
 var errBack = function(e) {
   console.log('An error has occurred!', e)
@@ -36,6 +37,7 @@ else if(navigator.getUserMedia) { // Standard
 
 
 document.getElementById("check").addEventListener('click', function() {
-	context.drawImage(video, 0, 0, 640, 480);
+	context.drawImage(video, 0, 0, 500, 400);
+  photo.setAttribute('src', canvas.toDataURL('image/png'))
 });
 },false);

@@ -4,7 +4,7 @@
 <head>
 
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-
+    <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
     <title>Recyclable?</title>
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,16 +14,16 @@
     <meta name="author" content="">
 
     <!-- Bootstrap Css -->
-    <link href="file:///C:\Users\erick\OneDrive\Documents\Programs\LaHacks\Recylable-\bootstrap-assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="bootstrap-assets/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Style -->
-    <link href="file:///C:\Users\erick\OneDrive\Documents\Programs\LaHacks\Recylable-\plugins/owl-carousel/owl.carousel.css" rel="stylesheet">
-    <link href="file:///C:\Users\erick\OneDrive\Documents\Programs\LaHacks\Recylable-\plugins/owl-carousel/owl.theme.css" rel="stylesheet">
-    <link href="file:///C:\Users\erick\OneDrive\Documents\Programs\LaHacks\Recylable-\plugins/owl-carousel/owl.transitions.css" rel="stylesheet">
-    <link href="file:///C:\Users\erick\OneDrive\Documents\Programs\LaHacks\Recylable-\plugins/Lightbox/dist/css/lightbox.css" rel="stylesheet">
-    <link href="file:///C:\Users\erick\OneDrive\Documents\Programs\LaHacks\Recylable-\plugins/Icons/et-line-font/style.css" rel="stylesheet">
-    <link href="file:///C:\Users\erick\OneDrive\Documents\Programs\LaHacks\Recylable-\plugins/animate.css/animate.css" rel="stylesheet">
-    <link href="file:///C:\Users\erick\OneDrive\Documents\Programs\LaHacks\Recylable-\css/main.css" rel="stylesheet">
+    <link href="plugins/owl-carousel/owl.carousel.css" rel="stylesheet">
+    <link href="plugins/owl-carousel/owl.theme.css" rel="stylesheet">
+    <link href="plugins/owl-carousel/owl.transitions.css" rel="stylesheet">
+    <link href="plugins/Lightbox/dist/css/lightbox.css" rel="stylesheet">
+    <link href="plugins/Icons/et-line-font/style.css" rel="stylesheet">
+    <link href="plugins/animate.css/animate.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
     <!-- Icons Font -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -51,7 +51,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#"><img src="file:///C:\Users\erick\OneDrive\Documents\Programs\LaHacks\Recylable-\img/logo/logo.png" class="img-responsive" alt="logo"></a>
+                    <a class="navbar-brand" href="#"><img src="img/logo/logo.png" class="img-responsive" alt="logo"></a>
                 </div>
                 <div class="collapse navbar-collapse text-center" id="bs-example-navbar-collapse-1">
                     <div class="col-md-8 col-xs-12 nav-wrap">
@@ -108,65 +108,20 @@
             <div class="recognition-box">
 
                 <div class="row wow fadeInUp" data-wow-delay=".3s" id = "booth">
-                      <video id = "video" width = "500" height = "300" autoplay></video>
+                      <video id = "video" width = "500" height = "400" autoplay></video>
                 </div>
-                <button id = "check"> Analyze item </button>
-                <canvas id = "canvas" width = "640" height = "480"></canvas>
+                <button id = "check" class = "btn-transparent"> Analyze item </button>
+                <div class="row wow fadeInUp" data-wow-delay=".3s" id = "booth">
+                  <canvas id = "canvas" width = "500" height = "400"></canvas>
+                  <img id = "photo" img src = "http://placekitten.com/g/500/400" alt = "Recyclable?">
+                </div>
 
             </div>
         </div>
-        <script src = "file:///C:\Users\erick\OneDrive\Documents\Programs\LaHacks\Recylable-\js/photo.js"></script>
+        <script src = "js/photo.js"></script>
     </section>
-    <!-- Google Map
-	============================================= -->
-    <div id="map"></div>
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="bootstrap-assets/js/bootstrap.min.js"></script>
-    <script src="js/custom.js"></script>
-    <!-- JS PLUGINS -->
-    <script src="plugins/owl-carousel/owl.carousel.min.js"></script>
-    <script src="js/jquery.easing.min.js"></script>
-    <script src="plugins/countTo/jquery.countTo.js"></script>
-    <script src="plugins/inview/jquery.inview.min.js"></script>
-    <script src="plugins/Lightbox/dist/js/lightbox.min.js"></script>
-    <script src="plugins/WOW/dist/wow.min.js"></script>
-    <!-- GOOGLE MAP -->
-    <script src="https://maps.googleapis.com/maps/api/js"></script>
 
-    <!-- Some Fune Facts
-	============================================= -->
-    <section id="fun-facts">
-        <div class="container">
-            <h2>Some Fun Facts </h2>
-            <hr class="sep">
-            <p>Fun Facts</p>
-            <div class="row wow fadeInUp" data-wow-delay=".3s">
-                <div class="col-lg-3">
-                    <span class="icon-happy"></span>
-                    <h2 class="number timer">-</h2>
-                    <h4>Insert Stat</h4>
-                </div>
-                <div class="col-lg-3">
-                    <span class="icon-trophy"></span>
-                    <h2 class="number timer">-</h2>
-                    <h4>Insert Stat</h4>
-                </div>
-                <div class="col-lg-3">
-                    <span class="icon-wine"></span>
-                    <h2 class="number timer">-</h2>
-                    <h4>insert stat</h4>
-                </div>
-                <div class="col-lg-3">
-                    <span class="icon-documents"></span>
-                    <h2 class="number timer">-</h2>
-                    <h4>Lines Of Code</h4>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Some Fune Facts
+    <!-- Team
 	============================================= -->
     <section id="team">
         <div class="container">
@@ -214,6 +169,56 @@
         </div>
     </section>
 
+    <!-- Google Map
+  ============================================= -->
+    <div id="map"></div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap-assets/js/bootstrap.min.js"></script>
+    <script src="js/custom.js"></script>
+    <!-- JS PLUGINS -->
+    <script src="plugins/owl-carousel/owl.carousel.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="plugins/countTo/jquery.countTo.js"></script>
+    <script src="plugins/inview/jquery.inview.min.js"></script>
+    <script src="plugins/Lightbox/dist/js/lightbox.min.js"></script>
+    <script src="plugins/WOW/dist/wow.min.js"></script>
+    <!-- GOOGLE MAP -->
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+
+    <!-- Some Fun Facts
+  ============================================= -->
+    <section id="fun-facts">
+        <div class="container">
+            <h2>Some Fun Facts </h2>
+            <hr class="sep">
+            <p>Fun Facts</p>
+            <div class="row wow fadeInUp" data-wow-delay=".3s">
+                <div class="col-lg-3">
+                    <span class="icon-happy"></span>
+                    <h2 class="number timer">-</h2>
+                    <h4>Insert Stat</h4>
+                </div>
+                <div class="col-lg-3">
+                    <span class="icon-trophy"></span>
+                    <h2 class="number timer">-</h2>
+                    <h4>Insert Stat</h4>
+                </div>
+                <div class="col-lg-3">
+                    <span class="icon-wine"></span>
+                    <h2 class="number timer">-</h2>
+                    <h4>insert stat</h4>
+                </div>
+                <div class="col-lg-3">
+                    <span class="icon-documents"></span>
+                    <h2 class="number timer">-</h2>
+                    <h4>Lines Of Code</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Contact Us
 	============================================= -->
     <section id="contact">
@@ -249,5 +254,6 @@
             </div>
         </div>
     </footer>
+
 </body>
 </html>
