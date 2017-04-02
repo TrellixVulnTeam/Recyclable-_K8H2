@@ -41,3 +41,26 @@ document.getElementById("check").addEventListener('click', function() {
   photo.setAttribute('src', canvas.toDataURL('image/png'))
 });
 },false);
+
+// Imports the Google Cloud client library
+var Vision = require('@google-cloud/vision');
+
+// Your Google Cloud Platform project ID
+var projectId = 'helpful-aurora-163400';
+
+// Instantiates a client
+const visionClient = Vision({
+  projectId: projectId
+});
+
+// The name of the image file to annotate
+const fileName = photo;
+
+// Performs label detection on the image file
+visionClient.detectLabels(fileName)
+  .then((results) => {
+    const labels = results[0];
+
+    console.log('Labels:');
+    labels.forEach((label) => console.log(label));
+  });

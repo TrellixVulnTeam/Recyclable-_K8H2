@@ -1,11 +1,13 @@
 {
-  "name" : "Recyclable",
+  "name" : "recyclable",
   "version" : "1.0.0",
   "scripts" : {
-    "start" : "node server.js"
+    "start" : "node server.js",
+    "deploy":"gcloud app deploy",
+    "test":"echo \"Error: no test specified\" && exit 1"
   },
   "dependencies" : {
-    "express" : "4.13.3"
+    "express" : "4.13.4"
   },
   "author" : "Erick Suarez",
   "license" : "ISC"

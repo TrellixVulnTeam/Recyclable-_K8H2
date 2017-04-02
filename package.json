@@ -1,12 +1,14 @@
 {
-  "name" : "Recyclable",
-  "version" : "1.0.0",
-  "scripts" : {
-    "start" : "node server.js"
+  "name": "Recyclable",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node server.js"
   },
-  "dependencies" : {
-    "express" : "4.13.3"
+  "dependencies": {
+    "@google-cloud/vision": "^0.11.0",
+    "ejs": "^2.5.6",
+    "express": "^4.15.2"
   },
-  "author" : "Erick Suarez",
-  "license" : "ISC"
+  "author": "Erick Suarez",
+  "license": "ISC"
 }
